@@ -27,7 +27,7 @@ main {
 .column {
     justify-content: space-evenly;
     min-width: 250px;
-    max-width: 350px;
+    max-width: 325px;
     min-height: 450px;
     max-height: 550px;
     width: 85%;
