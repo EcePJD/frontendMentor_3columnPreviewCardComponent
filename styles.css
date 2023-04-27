@@ -1,0 +1,154 @@
+/* GLOBAL CSS - Start */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -ms-flex-direction: column; /* TWEENER - IE 10 */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* GLOBAL CSS - End */
+
+/* MAIN ELEMENT CSS - Start */
+main {
+    width: 100%;
+    min-height: 100vh;
+    margin: 25% 0 25% 0;
+}
+
+.column {
+    justify-content: space-evenly;
+    min-width: 250px;
+    max-width: 350px;
+    min-height: 450px;
+    max-height: 550px;
+    width: 85%;
+    height: 90%;
+}
+
+.column > * {
+    align-self: flex-start;
+    margin: 0 14% 0 14%;
+}
+
+.column > :first-child {
+    margin-top: 5%;
+}
+
+.column > :last-child {
+    margin-bottom: 5%;
+}
+
+.container-sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.container-suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container-luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 95%);
+}
+
+.description,
+.btn {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.description {
+    line-height: 175%;
+}
+
+.btn {
+    width: 45%;
+    color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    padding: 4.5% 0 4.5% 0;
+    border: none;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+#btn-sedans {
+    border-color:hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+
+#btn-sedans:hover {
+    border-color:hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+#btn-suvs {
+    border-color:hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+
+#btn-suvs:hover {
+    border-color:hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+#btn-luxury {
+    border-color:hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+
+#btn-luxury:hover {
+    border-color:hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+/* MAIN ELEMENT CSS - End */
+
+@media only screen and ( max-width: 820px ) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .column:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .column:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media only screen and ( min-width: 821px ) {
+    .wrapper {
+        margin: 0;
+        flex-direction: row;
+    }
+
+    .column {
+        height: 75vh;
+    }
+
+    .column:first-child {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .column:last-child {
+        border-radius: 0 10px 10px 0;
+    }
+}
