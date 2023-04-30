@@ -30,8 +30,6 @@ FIrst, I properly organized the index.html contents to fit my envisioned html or
 - Semantic HTML5 markup
 - CSS custom properties
 - Mobile-first workflow
-- Javascript
-- Javascript DOM
 
 ### What I learned
 Refresher for basic HTML and CSS.
